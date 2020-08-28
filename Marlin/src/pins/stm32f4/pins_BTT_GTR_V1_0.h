@@ -51,10 +51,10 @@
 //
 #define X_MIN_PIN                           PF2
 #define X_MAX_PIN                           PG14
-#define Y_MIN_PIN                           PC13
-#define Y_MAX_PIN                           PG9
+//#define Y_MIN_PIN                          PC13 //disabled. used for Y Max.
+#define Y_MAX_PIN                           PC13 //Was PG9 by default
 #define Z_MIN_PIN                           PE0
-#define Z_MAX_PIN                           PD3
+//#define Z_MAX_PIN                           PD3
 
 //
 // Pins on the extender
@@ -259,7 +259,7 @@
 // Heaters / Fans
 //
 #define HEATER_0_PIN                        PB1   // Heater0
-#define HEATER_1_PIN                        PA1   // Heater1
+//#define HEATER_1_PIN                        PA1   // Heater1 //Disabled to use PA1 as the controler Fan output
 #define HEATER_2_PIN                        PB0   // Heater2
 
 #define HEATER_3_PIN                        PD15  // Heater3
@@ -270,13 +270,13 @@
 
 #define HEATER_BED_PIN                      PA2   // Hotbed
 
-#define FAN_PIN                             PE5   // Fan0
-#define FAN1_PIN                            PE6   // Fan1
-#define FAN2_PIN                            PC8   // Fan2
+#define FAN_PIN                             PE6   // Fan0
+//#define FAN1_PIN                          PE6   // Fan1 //Disabled in order to use pin for E0 Auto Fan
+//#define FAN2_PIN                          PC8   // Fan2 //Disabled in order to use Case Fan Light
 
-#define FAN3_PIN                            PI5   // Fan3
-#define FAN4_PIN                            PE9   // Fan4
-#define FAN5_PIN                            PE11  // Fan5
+//#define FAN3_PIN                          PI5   // Fan3
+//#define FAN4_PIN                          PE9   // Fan4
+//#define FAN5_PIN                          PE11  // Fan5
 //#define FAN6_PIN                          PC9   // Fan6
 //#define FAN7_PIN                          PE14  // Fan7
 
