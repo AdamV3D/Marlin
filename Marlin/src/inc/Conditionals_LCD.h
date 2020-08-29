@@ -665,7 +665,7 @@
   #if DISABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
     #define HAS_CUSTOM_PROBE_PIN 1
   #endif
-  #if Z_HOME_DIR < 0 && (!HAS_CUSTOM_PROBE_PIN || ENABLED(USE_PROBE_FOR_Z_HOMING))
+  #if Z_HOME_DIR < 0
     #define HOMING_Z_WITH_PROBE 1
   #endif
   #ifndef Z_PROBE_LOW_POINT
@@ -781,7 +781,7 @@
   #define EXTRUDE_MINTEMP 170
 #endif
 
-// This flag indicates if Neopixel pins are shared or separated  
+// This flag indicates if Neopixel pins are shared or separated
 #if EITHER(MULTIPLE_NEOPIXEL_TYPES, NEOPIXEL2_INSERIES)
   #define CONJOINED_NEOPIXEL 1
 #endif
