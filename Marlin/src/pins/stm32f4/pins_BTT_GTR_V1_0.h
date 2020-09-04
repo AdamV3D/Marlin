@@ -53,7 +53,7 @@
 #define X_MAX_PIN                           PG14
 //#define Y_MIN_PIN                          PC13 //disabled. used for Y Max.
 #define Y_MAX_PIN                           PC13 //Was PG9 by default
-#define Z_MIN_PIN                           PE0
+//#define Z_MIN_PIN                           PE0
 //#define Z_MAX_PIN                           PD3
 
 //
